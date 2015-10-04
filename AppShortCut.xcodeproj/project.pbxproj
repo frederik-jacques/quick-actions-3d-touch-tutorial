@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		86B0B9171BC1255E0024C4CB /* AddUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B0B9161BC1255E0024C4CB /* AddUserViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		86FAE7E41BBC007100776915 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FAE7E31BBC007100776915 /* AppDelegate.swift */; };
 		86FAE7E61BBC007100776915 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FAE7E51BBC007100776915 /* ViewController.swift */; };
 		86FAE7E91BBC007100776915 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86FAE7E71BBC007100776915 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		86B0B9161BC1255E0024C4CB /* AddUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddUserViewController.swift; sourceTree = "<group>"; };
 		86FAE7E01BBC007100776915 /* AppShortCut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppShortCut.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86FAE7E31BBC007100776915 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86FAE7E51BBC007100776915 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				86FAE7E31BBC007100776915 /* AppDelegate.swift */,
+				86B0B9161BC1255E0024C4CB /* AddUserViewController.swift */,
 				86FAE7E51BBC007100776915 /* ViewController.swift */,
 				86FAE7E71BBC007100776915 /* Main.storyboard */,
 				86FAE7EA1BBC007100776915 /* Assets.xcassets */,
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				86FAE7E61BBC007100776915 /* ViewController.swift in Sources */,
+				86B0B9171BC1255E0024C4CB /* AddUserViewController.swift in Sources */,
 				86FAE7E41BBC007100776915 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,6 +296,7 @@
 				86FAE7F41BBC007100776915 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -47,7 +47,14 @@ func application(application: UIApplication, didFinishLaunchingWithOptions launc
             
             // Add your code here
             print("- Handling \(shortcutItem.type)")
+
+            // Get the view controller you want to load
+            let mainSB = UIStoryboard(name: "Main", bundle: nil)
+            let addUserVC = mainSB.instantiateViewControllerWithIdentifier("AddUserViewController") as! AddUserViewController
             
+            let navVC = self.window?.rootViewController as! UINavigationController
+            navVC.pushViewController(addUserVC, animated: true)
+
             succeeded = true
             
         }

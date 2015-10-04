@@ -1,10 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="sRh-3u-bKx">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="PfM-U1-VC3">
+            <objects>
+                <navigationController id="sRh-3u-bKx" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="SSK-xJ-SrD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Vaa-KR-VFf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4kq-v1-zmd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-580" y="215"/>
+        </scene>
+        <!--First view controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AppShortCut" customModuleProvider="target" sceneMemberID="viewController">
@@ -15,11 +32,66 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First view controller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Trj-u2-4ve">
+                                <rect key="frame" x="225" y="290" width="150" height="20"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Trj-u2-4ve" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Z3b-WM-g0Q"/>
+                            <constraint firstItem="Trj-u2-4ve" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bbF-m8-2Ey"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="First view controller" id="g35-KS-eRW">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="FVI-2u-pvB">
+                            <connections>
+                                <segue destination="dFG-9K-Zsf" kind="show" identifier="sgAddUser" id="gzE-Rq-Njn"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="120" y="215"/>
+        </scene>
+        <!--Add user-->
+        <scene sceneID="0pG-4s-DwU">
+            <objects>
+                <viewController storyboardIdentifier="AddUserViewController" id="dFG-9K-Zsf" customClass="AddUserViewController" customModule="AppShortCut" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="idG-oa-S0t"/>
+                        <viewControllerLayoutGuide type="bottom" id="2pw-VZ-Ekd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZkR-6B-9IJ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add user view controller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zYG-GG-cvJ">
+                                <rect key="frame" x="209" y="291" width="184" height="20"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zYG-GG-cvJ" firstAttribute="centerX" secondItem="ZkR-6B-9IJ" secondAttribute="centerX" constant="1" id="U6S-dE-8Gs"/>
+                            <constraint firstItem="zYG-GG-cvJ" firstAttribute="centerY" secondItem="ZkR-6B-9IJ" secondAttribute="centerY" constant="1" id="r7i-VY-R04"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add user" id="A9g-iX-lCP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7qS-8t-LZm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="807" y="215"/>
         </scene>
     </scenes>
 </document>
